@@ -7,7 +7,6 @@ body {
     font-family: "Wermut", sans-serif;
 }
 
-
 .layout {
     max-width: 1440px;  
     width: 100%;         
@@ -15,15 +14,12 @@ body {
     overflow: hidden;    
 }
 
-
 /* секция 1 */
 .section-1 {
     position: relative;
     padding-top: 50px;
     padding-bottom: 0; 
     background-color: #243A42;
-
-    /* background-color: #B55F22; */
 }
 
 .section-1 img {
@@ -37,10 +33,7 @@ body {
     top: 105px;
     left: 50%;
     transform: translateX(-50%);
-    margin: 0;
-
-
-    font-size: 72px;
+    font-size: 70px;
     color: #7C3A22;
 }
 
@@ -49,22 +42,19 @@ body {
     position: relative;
     width: 100%;
     height: 817px;
-    background-color: pink; /* для видимости */
 }
 
-/* strip.svg */
 .section-2 img.strip {
     width: 100%;
     display: block;
-    z-index: 1; /* по умолчанию */
+    z-index: 1; 
 }
 
-/* cup.svg */
 .section-2 img.cup {
     position: absolute;
     top: 350px;
     left: 735px;
-    width: 589px; /* подбери под макет */
+    width: 589px; 
     height: 447px;
     z-index: 10;
 }
@@ -74,12 +64,11 @@ body {
     position: absolute;
     top: 0px;
     left: 100px;
-    width: 564px; /* подбери под макет */
+    width: 564px; 
     height: 546px;
     z-index: 10;
 }
 
-/* нижний прямоугольник */
 .bottom-rectangle {
     position: absolute;
     bottom: 0;
@@ -90,31 +79,26 @@ body {
     z-index: 5;
 }
 
-
-/* заголовок "алфавит" */
 .section-2 p.title {
-    /* position: absolute; */
     top: 160px;
     left: 250px;
     margin: 0;
     z-index: 12;
     text-align: center;
-    font-size: 72px;
+    font-size: 70px;
     color: #070707;
 }
 
-/* буквы "Аа Бб ..." */
+
 .section-2 p.letters {
-    /* position: absolute; */
-    top: 250px;  /* чуть ниже заголовка */
+    top: 250px;  
     left: 250px;
     margin: 0;
     margin-top: 17px;
     z-index: 12;
-    font-size: 35px;
+    font-size: 30px;
     color: #070707;
-    line-height: 1.5; /* для переноса по строкам */
-    /* max-width: 500px; */
+    line-height: 1.5; 
     text-wrap: wrap;
 }
 
@@ -126,6 +110,7 @@ body {
     max-width: 425px;
 }
 
+/* секция 3 */
 .section-3 {
     display: flex;
     flex-direction: column;
@@ -145,15 +130,14 @@ body {
 }
 
 .section-3 p.title {
-    /* position: relative; */
-    
-    top: 200px;
-    left: 250px;
-    margin: 80px 0 0 0;
     z-index: 12;
     text-align: center;
-    font-size: 72px;
+    font-size: 70px;
     color: #070707;
+}
+
+.section-3 .main-title {
+    margin-top: 80px;
 }
 
 .section-3 p.letters {
@@ -171,19 +155,312 @@ body {
 }
 
 .section-3 .line {
-    border-bottom: 2px solid black;
-    width: 900px;
+  border-bottom: 3.5px solid #243a42;
+  width: 900px;
+}
+
+.section-3 .line-1 {
+  position: absolute;
+  top: 24px;
+}
+
+.section-3 .line-2 {
+  position: absolute;
+  top: 44px;
+}
+
+.section-3 .line-3 {
+  position: absolute;
+  top: 100px;
+}
+
+.section-3 .circle {
+  border: 3.5px solid #070707;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.section-3 .circle-1 {
+  position: absolute;
+  top: -6px;
+  left: 49.6%;
+}
+
+.section-3 .circle-2 {
+  position: absolute;
+  top: 71px;
+  left: 66.5%;
+}
+
+.section-3 p.typography-description {
+  font-size: 35px;
+}
+
+.section-3 p.description-1 {
+  position: absolute;
+  top: -55px;
+  left: 46.9%;
+}
+
+.section-3 p.description-2 {
+  position: absolute;
+  top: 125px;
+  left: 62%;
+  text-align: center;
+  width: 150px;
+}
+
+.section-3 p.description-3 {
+  position: absolute;
+  top: 51px;
+  left: 26.5%;
+  transform: rotate(-90deg);
+  font-size: 26px;
+}
+
+.section-3 .arrow {
+  position: absolute;
+  top: 26px;
+  left: 30%;
+  height: 75px;
+}
+
+.section-3 p.typography-title {
+  position: relative;
+  font-style: italic;
+  font-size: 112px;
 }
 
 .section-3 .typography {
+  width: 100%;
+  position: absolute;
+  top: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+/* секция 4 */
+.section-4 {
+    position: relative;
     width: 100vw;
+    height: 817px;
+    background-color: pink; 
+    font-style: italic;
+}
+
+.section-4 .strip-2 {
+    width: 100vw;
+}
+
+.section-4 img.table {
     position: absolute;
-    top: 550px;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 701px;
+}
+
+.section-4 p.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 240px;
+    text-align: center;
+    font-size: 70px;
+    color: #070707;
+}
+
+.section-4 p.letters {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 150px;
+    margin: 80px 0 0 0;
+    font-size: 30px;
+    color: #070707;
+}
+
+.section-4 .menu {
+    position: absolute;
+    top: 350px;
+    width: 800px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-4 th, .section-4 td {
+    font-size: 30px;
+}
+
+.section-4 th {
+    text-align: start;
+}
+
+.section-4 th p {
+    color: #E4C9A6;
+    border: 1px solid #A25529;
+    background-color: #A25529;
+    border-radius: 9px;
+    padding: 8px;
+    width: 125px;
+    text-align: center;
+}
+
+.section-4 td {
+    width: 400px;
+    line-height: 3;
+}
+
+.section-4 .regular {
+    font-style: normal;
+}
+
+/* секция 5 */
+.section-5 {
     display: flex;
+    flex-direction: column;
+    background-color: #E4C9A6;
+    height: 841px;
+    width: 100%;
+    position: relative;
+}
+
+.section-5 .rectangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 172px;
+    background-color: #243A42;
+    z-index: 5;
+}
+
+.section-5 .sweets {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1150px;
+    width: 960px;
+    z-index: 6;
+}
+
+.section-5 p.title {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 12;
+    font-size: 70px;
+    text-align: center;
+    font-style: italic;
+    color: #070707;
+
+}
+
+.section-5 p.letters {
+    position: absolute;
+    top: 160px;
+    left: 30%;
+    transform: translateX(-50%);
+    z-index: 12;
+    font-size: 30px;
+    color: #070707;
+}
+
+/* секция 6 */
+.section-6 {
+    display: flex;
+    flex-direction: column;
+    background-color: #243A42;
+    height: 840px;
+    width: 100%;
+    position: relative;
+}
+
+.section-6 .rectangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 172px;
+    background-color: #CB7935;
+    z-index: 5;
+}
+
+.section-6 .kettle {
+    position: absolute;
+    top: 13px;
+    left: 50%;
+    width: 50%;
+}
+
+.section-6 .cup-2 {
+    position: absolute;
+    top: 220px;
+    left: 14%;
+    width: 40%;
+    z-index: 6;
+}
+
+/* секция 7 */
+.section-7 {
+    position: relative;
+    height: 1008px;
+}
+
+.section-7 .strip-3 {
+    position: absolute;
+    width: 100vw;
+}
+
+.section-7 .cinnabon {
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+    height: 1150px;
+    width: 960px;
+    z-index: 6;
+}
+
+.section-7 p.title {
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 12;
+    font-size: 70px;
+    text-align: center;
+    font-style: italic;
+    color: #E4C9A6;
+
+}
+
+.section-8 {
+    height: 250px;
+    background-color: #E4C9A6;
+    display: flex;
+    justify-content: center;
+}
+
+.section-8 .grid-box {
+    position: relative;
+    top: 100px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50px);
     align-items: center;
     justify-content: center;
 }
 
-.section-3 .typography-inner {
-    width: 100%;
+.section-8 p.letters {
+    position: relative;
+    z-index: 12;
+    font-size: 30px;
+    color: #070707;
 }

@@ -26,16 +26,3 @@
     font-weight: 400;
 }
 
-@font-face {
-    font-family: "Wermut";
-    src: url("../fonts/Wermut.woff") format("woff");
-    font-style: normal ;
-    font-weight: 300;
-}
-
-@font-face {
-    font-family: "Wermut";
-    src: url("../fonts/Wermut.woff2") format("woff");
-    font-style: normal;
-    font-weight: 300;
-}
