@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: "Wermut", sans-serif;
+    cursor: url("../images/custom-cursor.svg"), auto;
 }
 
 .layout {
